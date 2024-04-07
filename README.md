@@ -16,6 +16,8 @@
 - [IMDB 5000 Movie Dataset](https://www.kaggle.com/datasets/carolzhangdc/imdb-5000-movie-dataset?select=movie_metadata.csv)
 - [Credits Dataset](https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset?select=credits.csv)
 - [Movie Metadata Dataset](https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset?select=movies_metadata.csv)
+- [Credits Dataset](https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset?select=credits.csv)
+- [IMDB Dataset](https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews)
 
 ## Tutorial Menjalankan Aplikasi:
 - Clone repository ini
