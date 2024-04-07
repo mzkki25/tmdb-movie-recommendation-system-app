@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Movie Recommendation System </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Auto Complete -->
+    <link rel="stylesheet" type="text/css" href="../static/css/autocomplete.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+    <!-- Script -->
+    <script type="text/javascript"> var films = {{suggestions|tojson}}; </script>
+</head>
+
+<body id="content" style="font-family: sans-serif; font-weight: bold;">
+    <div class="center" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;">
+        <div class="ml-container" style="display: block;">
+            <center>
+                <h1 style="color: white; font-weight: bold;"> Movie Recommendation System </h1>
+            </center>
+            <div class="form-group shadow-textarea" style="margin-top: 30px; text-align: center; color: white;">
+                <input type="text" name="movie" class="movie form-control" id="autoComplete" autocomplete="off" placeholder="Enter the Movie Name" style="background-color: #ffffff;border-color:#ffffff;width: 60%;color: #181818;" required="required" />
+            </div>
+            <div class="form-group">
+                <button class="btn btn-outline-danger btn-block reset-button"> Reset </button>
+                <button class="btn btn-danger btn-block movie-button" disabled="true"> Search </button>
+            </div>    
+        </div>
+    </div>
+
+    <div id="loader" class="text-center"></div>
+    <div id="transparant-bg"></div>
+    
+    <br>
+    <br>
+    <br>
+
+    <div class="fail">
+        <center>
+            <h5 style="font-family: sans-serif; font-weight: bold;">Sorry! The movie you requested is not in our database. Please check the spelling or try with other movies!</h5>
+        </center>
+    </div>
+
+    <div class="results">
+        <center>
+            <h2 id="name" class="text-uppercase"></h2>
+        </center>
+    </div>
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../static/js/autocomplete.min.js"></script>
+    <script type="text/javascript" src="../static/js/autocomplete.js"></script>
+    <script type="text/javascript" src="../static/js/recommend.js"></script>
+</body>
+</html>

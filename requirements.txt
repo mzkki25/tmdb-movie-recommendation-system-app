@@ -1,0 +1,11 @@
+keras==2.10.0
+tensorflow==2.10.0
+numpy==1.26.4
+nltk==3.8.1
+wordcloud==1.9.3
+matplotlib==3.8.3
+scikit-learn==1.4.1.post1
+pandas==1.4.1.post1
+keras_preprocessing==1.1.2
+beautifulsoup4==4.12.3
+flask==3.0.2
